@@ -75,12 +75,14 @@
 
     <properties>
         <encoding>UTF-8</encoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdk.version>1.6</jdk.version>
         <jdk.home>${env.JAVA_6_HOME}</jdk.home>
         <test.jdk.home>${jdk.home}</test.jdk.home>
 
         <!-- hbase -->
         <hbase.shaded.client.version>1.4.13</hbase.shaded.client.version>
+
 
         <plugin.clover.skip>false</plugin.clover.skip>
         <plugin.animal-sniffer.skip>false</plugin.animal-sniffer.skip>
@@ -162,6 +164,8 @@
         <plugin.frontend.node.version>v10.18.0</plugin.frontend.node.version>
         <plugin.frontend.npm.version>6.13.4</plugin.frontend.npm.version>
         <plugin.frontend.node.install.dir>/node_install/node-${plugin.frontend.node.version}</plugin.frontend.node.install.dir>
+
+        <skipTests>true</skipTests>
     </properties>
 
     <dependencies>
